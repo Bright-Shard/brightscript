@@ -5,7 +5,7 @@ use super::Command;
 pub struct ShellCommand {}
 impl Command for ShellCommand {
     fn matches(&self, text: &str) -> bool {
-        text.starts_with('$')
+        text.starts_with('$') || text == "shell"
     }
     fn exec(&self, ctx: super::Context) {
         let mut command_chars = ctx.command_raw.chars();
