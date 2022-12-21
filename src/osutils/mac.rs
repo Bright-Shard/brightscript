@@ -3,11 +3,11 @@ use std::{
     process::{ChildStdin, Command, Stdio},
 };
 
-pub struct OSUtil {
+pub struct OSUtils {
     shell: ChildStdin,
 }
 
-impl super::OSUtilMethods for OSUtil {
+impl super::OSUtilMethods for OSUtils {
     fn new() -> Self {
         Self {
             shell: Self::shell(),

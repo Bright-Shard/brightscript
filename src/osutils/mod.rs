@@ -8,7 +8,7 @@ mod os;
 use std::process::ChildStdin;
 
 // Exports
-pub use os::OSUtil;
+pub use os::OSUtils;
 
 // OSUtilMethods trait, defining what each OSUtil should do
 pub trait OSUtilMethods {
